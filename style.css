@@ -1,0 +1,146 @@
+@import url(//db.onlinewebfonts.com/c/58045dabdc3a361cb9bb9faf2f1dd1f3?family=Digital-7);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'digital-7';
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 60%;
+    height: 70%;
+    /* background-color: beige; */
+    display: flex;
+}
+
+.left-box{
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image img {
+    width: 50%;
+}
+
+.content{
+    position: absolute;
+    width: 40vw;
+    height: 70vh;   
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.clock-content {
+    /* background-color: yellow; */
+    color: aquamarine;
+    width: 35%;
+    height: 10%;
+    display: flex;
+    justify-content: center; 
+     align-items: center;
+    font-size: 50px;
+    gap: 2px;
+}
+#mili-seconds{
+    font-size: 20px;
+    text-align: end;
+    position: relative;
+    left: 5px;
+    top:  6px;
+}
+
+.right-box{
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-box{
+    /* background-color: bisque; */
+    width: 40%;
+    height: 60%;
+}
+.record-time{
+    width: 40%;
+    height: 100%;
+    overflow: scroll;
+    color: #03DAC5;
+    font-size: 25px;
+    text-align: center;
+    display: none;
+}
+.record-time::-webkit-scrollbar{
+    display: none;
+}
+#record-time-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    margin-top: 20px;
+}
+#record-time-list li {
+    border: 0.5px solid #03DAC5;
+    border-radius: 1px;
+}
+.button-box #button {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10%;
+    justify-content: center;
+}
+#button li {
+    color: #fff;
+    text-decoration: none;
+    font-size: 35px;
+    position: relative;
+    list-style-type: none;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  #button li:hover {
+    color: #03DAC5;
+    cursor: pointer;
+  }
+  #button li::after {
+    content: " ";
+    width: 0;
+    height: 5px;
+    background: #03DAC5;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+  }
+  #button li:hover::after {
+    width: 100%;
+  }
